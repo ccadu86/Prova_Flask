@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>API Flask</title>
+</head>
+<body>
+  <div class="container">
+    <h1>API Flask</h1>
+    
+    <div>
+      <h2>Registros:</h2>
+      <ul id="recordsList"></ul>
+    </div>
+    
+    <div>
+      <h2>Adicionar Registro:</h2>
+      <label>
+        Nome:
+        <input type="text" id="inputNome" />
+      </label>
+      <label>
+        Idade:
+        <input type="text" id="inputIdade" />
+      </label>
+      <label>
+        Cidade:
+        <input type="text" id="inputCidade" />
+      </label>
+      <button onclick="createRecord()">Adicionar</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
